@@ -4,27 +4,31 @@
   <style>
     li {
       display: inline;
-      border-right: 1px solid blue;
+      border-bottom: 1px solid black;
       list-style-type: none;
       margin: 0px;
-      padding: 0px;
+      padding: 20px;
       float: right;
+
     }
-    a{
+    a:hover{
+      background-color: lawngreen;
+      color: white;
       display: inline;
-      padding: 10px;
+      padding: 15px;
       float: right;
     }
     input{
       border: 3px solid rosybrown;
-      padding: 10px;
+      padding: 12px;
       border-radius: 10px;
-
-
+      resize: vertical;
+      width: 50%;
+      vertical-align: baseline;
 
     }
     body{
-      background-image: url("totty/rose.jpg");
+      background-image: url("totty/cruise2.jpg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -37,6 +41,40 @@
       background-color: black;
       color: yellow;
       font-weight: bolder;
+
+
+    }
+    .navigationbar{
+     padding: 20px;
+    }
+    h1{
+      color: black;
+      scroll-behavior: smooth;
+      text-align: center;
+      font-family: sans-serif;
+    }
+    marquee {
+      color:black;
+      font-size: 30px;
+      font-weight: bolder;
+      font-family: cursive;
+
+    }
+    form{
+      margin: auto;
+      align-content:right;
+      width: 50%;
+      padding: 10 px;
+      box-sizing: border-box;
+
+    }
+    label{
+      cursor: pointer;
+      display: block;
+      align-content: center;
+
+
+
     }
 
   </style>
@@ -47,11 +85,12 @@
     <title>Navigation</title>
 </head>
 <body>
-<p>SharonBee</p>
+
+<h1>LA PRINCESS TOURS</h1>
 <nav class="navigationbar">
   <ul>
     <li><a href="html%20basics.html">HOME</a></li>
-    <li><a href="contactus.html">CONTACTUS</a></li>
+    <li><a href="contactus.html">DESTINATIONS</a></li>
     <li><a href="html%20basics.html">ABOUT</a></li>
     <li><a href="classes.html">NEWS</a></li>
 
@@ -59,26 +98,25 @@
 </nav>
 <form >
   <label for="Name">Name</label>
-  <input type="text"id="Name" name="Name"><br><br>
+  <input type="text"id="Name" name="Name" placeholder="name"><br><br>
   <label for="Phone">Phone</label>
-  <input type="text"id="Phone" name="Phone"><br><br>
+  <input type="text"id="Phone" name="Phone" placeholder="phone"><br><br>
   <label for="Date">Date</label>
-  <input type="date"id="Date" name="Tarehe"><br><br>
+  <input type="date"id="Date" name="Tarehe" placeholder="date"><br><br>
   <label for="Adult">Adult</label>
-  <input type="text" id="Adult" name="Adult"><br><br>
+  <input type="text" id="Adult" name="Adult" placeholder="adult"><br><br>
   <label for="Email">Email</label>
-  <input type="text" id="Email" name="E-MAIL"><br><br>
+  <input type="text" id="Email" name="E-MAIL" placeholder="email"><br><br>
   <label for="Children">Children</label>
-  <input type="text"id="Children" name="watoto"><br><br>
-  <label for="classes">Classes</label>
-  <select name="class" id="classes">
-    <option value="Artistic">Artistic</option>
-    <option value="Fashion and  design">Fashion and  design</option>
-    <option value="Masonry">Masonry</option>
+  <input type="text"id="Children" name="watoto" placeholder="children"><br><br>
+  <label for="Destinations">Destinations</label>
+  <select name="Destination" id="Destinations">
+    <option value="Miami">Miami</option>
+    <option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
   </select><br><br>
-  <button type="submit" >Sign me up</button>
-  <button type="button">Click Me</button>
-
-
+  <button type="submit" >BOOKTOURS</button>
+  <button type="button">EXIT</button>
+  <marquee behavior="scroll" direction="right">APPRECIEZ LA BALADE</marquee>
 </form></body>
 </html>
